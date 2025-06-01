@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Botão com Cor Dinâmica</title>
+  <style>
+    #botao {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="botao" onclick="mudarCor()">Clique aqui</button>
+  <script>
+    function mudarCor() {
+      const botao = document.getElementById('botao');
+      botao.style.backgroundColor = botao.style.backgroundColor === 'blue' ? 'green' : 'blue';
+    }
+  </script>
+</body>
+</html>
